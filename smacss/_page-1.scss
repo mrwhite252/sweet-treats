@@ -1,0 +1,77 @@
+.page-1 {
+  .content-wrapper {
+    position: relative;
+    height: 45vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    border: none;
+  }
+
+  .input-container {
+    flex: 0 0 40%;
+    margin: 1rem;
+    height: 3rem;
+    position: relative;
+  }
+
+  .name::after {
+    content: url(../images/SVG/svg-1.svg);
+    position: absolute;
+    top: 0.6rem;
+    right: 0.5rem;
+    width: 2rem;
+  }
+  .e-mail::after {
+    content: url(../images/SVG/svg-2.svg);
+    position: absolute;
+    top: 0.6rem;
+    right: 0.5rem;
+    width: 2rem;
+  }
+  .phone-number::after {
+    content: url(../images/SVG/svg-3.svg);
+    position: absolute;
+    top: 0.6rem;
+    right: 0.5rem;
+    width: 2rem;
+  }
+  .people::after {
+    content: url(../images/SVG/svg-4.svg);
+    position: absolute;
+    top: 0.6rem;
+    right: 0.5rem;
+    width: 2rem;
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid $main-color;
+    border-radius: 3px;
+    background-color: transparent;
+    color: $main-color;
+    text-indent: 1rem;
+  }
+
+  input:focus {
+    background-color: rgba(142, 184, 82, 0.9) !important;
+    color: white;
+    text-indent: 1rem;
+    outline-color: green;
+  }
+
+  input::placeholder {
+    text-indent: 1rem;
+    color: $main-color;
+  }
+
+  .page-1-btn {
+    justify-content: center;
+    button {
+      background-color: grey;
+      transition: all ease-in-out 0.5s;
+    }
+  }
+}

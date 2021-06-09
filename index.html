@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+      integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/main.js"></script>
+
+    <title>Formative 2.2</title>
+  </head>
+
+  <body>
+    <section class="main-container page-1">
+      <div class="nav-container">
+        <img class="nav-link current-step" data-id="page-1" src="./images/step-2-active.png" />
+        <img class="nav-link" data-id="page-2" src="./images/step-1.png" />
+        <img class="nav-link" data-id="page-3" src="./images/step-3.png" />
+        <img class="nav-link" data-id="page-4" src="./images/step-4.png" />
+      </div>
+
+      <div class="content-container">
+        <h1>Basic Details</h1>
+
+        <div class="content-wrapper">
+          <div class="input-container name">
+            <input type="text" placeholder="Your Name" id="name" />
+          </div>
+          <div class="input-container e-mail">
+            <input type="text" placeholder="Contact E-mail" id="e-mail" />
+          </div>
+          <div class="input-container phone-number">
+            <input
+              type="text"
+              placeholder="Contact Phone Number"
+              id="phone-number"
+            />
+          </div>
+          <div class="input-container people">
+            <input
+              type="text"
+              placeholder="For How Many People?(max:1000)"
+              id="people"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-container page-1-btn">
+        <button>COUNTIUNE</button>
+      </div>
+    </section>
+
+    <section class="main-container page-2">
+      <div class="nav-container">
+        <img class="nav-link" data-id="page-1" src="./images/step-2.png" />
+        <img class="nav-link current-step"  data-id="page-2" src="./images/step-1-active.png" />
+        <div class="nav-3"><img class="nav-link step-3"  data-id="page-3" src="./images/step-3.png" /></div>
+       
+        <img class="nav-link" data-id="page-4" src="./images/step-4.png" />
+      </div>
+
+      <div class="content-container">
+        <h1>Choose Your Treats</h1>
+
+        <div class="content-wrapper">
+      
+          <div class="filters">
+            <h2 id="fliter-title">Category:</h2>
+
+            <div id="categories">              
+            </div>
+
+
+            <div id="clear-filter">
+              <h2>Clear Filters</h2>
+            </div>
+
+          </div>
+
+          <div class="items-wrapper">
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <button class="back" data-id="page-1">BACK</button>
+        <button class="countinue" data-id="page-3">COUNTIUNE</button>
+      </div>
+    </section>
+
+    <section class="main-container page-3" >
+      <div class="nav-container">
+        <img class="nav-link" data-id="page-1" src="./images/step-2.png" />
+        <img class="nav-link" data-id="page-2" src="./images/step-1.png" />
+        <div class="nav-3"><img class="nav-link current-step" data-id="page-3" src="./images/step-3-active.png" /></div>
+        <img class="nav-link" data-id="page-4" src="./images/step-4.png" />
+      </div>
+
+      <div class="content-container">
+        <h1>Basic Details</h1>
+
+        <div class="content-wrapper">
+          <div class="titles">
+            <h3>Products</h3>
+            <h3>Quantity</h3>
+            <h3>Price</h3>
+          </div>
+
+          <div class="items-wrapper-page-3">
+         
+        </div>
+       
+      </div>
+      <div class="summary">
+      </div>
+
+      <div class="btn-container">
+        <button class="back" data-id="page-2">BACK</button>
+        <button class="countinue" data-id="page-4">COUNTIUNE</button>
+      </div>
+    </section>
+
+<section class="main-container page-4" >
+      <div class="nav-container">
+        <img class="nav-link" data-id="page-1" src="./images/step-2.png" />
+        <img class="nav-link" data-id="page-2" src="./images/step-1.png" />
+        <img class="nav-link" data-id="page-3" src="./images/step-3.png" />
+        <img class="nav-link current-step" data-id="page-4" src="./images/step-4-active.png" />
+      </div>
+
+      <div class="content-container">
+        <h1>Basic Details</h1>
+
+        <div class="content-wrapper">
+      
+        <div class="first-part">
+        </div>
+
+        <div class="second-part">
+        </div>
+
+        <div class="third-part">
+        </div>
+
+      </div>
+
+      <div class="btn-container">
+        <button class="back" data-id="page-3">BACK</button>
+        <button id="checkout">CHECK OUT</button>
+      </div>
+    </section>
+  </body>
+</html>

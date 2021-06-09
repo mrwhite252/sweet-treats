@@ -1,0 +1,33 @@
+.page-4 {
+  .content-wrapper {
+    max-height: 43vh;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    justify-content: flex-start;
+    background: $main-color;
+
+    .form-line {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0 auto;
+      width: 70%;
+    }
+    h3 {
+      margin-right: 3rem;
+      color: white;
+    }
+
+    .order {
+      h3 {
+        margin-right: 4rem;
+      }
+    }
+    h2 {
+      color: white;
+      margin-right: 1rem;
+      font-size: 2rem;
+    }
+  }
+}
